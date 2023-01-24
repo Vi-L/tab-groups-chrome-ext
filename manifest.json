@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Cookie shower",
+  "name": "Show cookie",
   "version": "1.0.0",
-  "description": "Cookie shower extension",
+  "description": "Extension to show cookies",
   "author": "g",
   "action":{
     "default_popup": "popup.html",
-    "default_title": "Cookie shower extension"
+    "default_title": "Show cookies"
   },
   "background": {
     "service_worker": "background.js"

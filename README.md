@@ -1,3 +1,3 @@
-# Cookie shower extension
+# Show Cookie
 
-Extension proof of concept.
+Chrome extension proof of concept.
