@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Extension to show cookies",
   "author": "g",
-  "action":{
+  "action": {
     "default_popup": "popup.html",
     "default_title": "Show cookies"
   },
