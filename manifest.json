@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie shower",
+  "version": "1.0.0",
+  "description": "Cookie shower extension",
+  "author": "g",
+  "action":{
+    "default_popup": "popup.html",
+    "default_title": "Cookie shower extension"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "cookies",
+    "scripting",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.style.css"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "devtools_page": "devtools.html",
+  "web_accessible_resources": [
+    {
+      "extension_ids": [],
+      "resources": [
+        "content.style.css"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}
