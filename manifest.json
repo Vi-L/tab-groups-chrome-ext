@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Show cookie",
+  "name": "Tab Groups Manager",
   "version": "1.0.0",
-  "description": "Extension to show cookies",
-  "author": "g",
+  "description": "Extension to manage tab groups",
+  "author": "v",
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Show cookies"
+    "default_title": "Manage Tab Groups"
   },
   "background": {
     "service_worker": "background.js"
@@ -14,7 +14,8 @@
   "permissions": [
     "cookies",
     "scripting",
-    "tabs"
+    "tabs",
+    "tabGroups"
   ],
   "content_scripts": [
     {
